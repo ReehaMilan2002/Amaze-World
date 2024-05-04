@@ -1,0 +1,250 @@
+
+/* repeated style declarations becasue am By grouping these selectors and applying the same styles to multiple elements, 
+you can achieve consistent styling for various types of elements within a specific section of your page*/
+
+.page-receipt * {
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body.page-receipt {
+    margin: 0 auto;
+}
+
+.Page_Conten_t {
+    background-color: #FFFFFF; /* Existing background color */
+    background-image: url('../../assets/images/extras/Reciept_Background.jpg'); /* Adjust the filename accordingly */
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+}
+
+
+.Page_Conten_t .Rceipts_History {
+    padding: 48px 96px;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+/* Transaction History */
+.Page_Conten_t .header_forHistory,
+
+/* Add Receipt Form */
+.Page_Conten_t .TheFormForEditandAdd,
+
+/* To Remove , Edit, etc Receipts */
+.Page_Conten_t .Rceipts_History a,
+
+/* Search  */
+.Page_Conten_t .Rceipts_History input 
+{
+    color: #111111;
+}
+
+.Page_Conten_t .header_forHistory,
+
+.Page_Conten_t .TheFormForEditandAdd,
+
+.Page_Conten_t .Rceipts_History a 
+{
+    font-weight: 600;
+}
+
+
+.Page_Conten_t .header_forHistory 
+{
+    font-size: 32px;
+}
+
+.Page_Conten_t .TheFormForEditandAdd 
+{
+    font-size: 24px;
+}
+
+.Page_Conten_t .Rceipts_History a,
+
+.Page_Conten_t .Rceipts_History button,
+/* Add Receipt  */ 
+.Page_Conten_t .Rceipts_History input,
+/* Transaction Type */
+.Page_Conten_t .Rceipts_History select,
+/* vrified  */
+.Page_Conten_t .Rceipts_History label 
+{
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Add Receipt  */ 
+.Page_Conten_t .Rceipts_History button,
+
+.Page_Conten_t .Rceipts_History input,
+/* Transaction Type */
+.Page_Conten_t .Rceipts_History select 
+{
+    padding: 16px 24px;
+    border-radius: 8px;
+}
+
+/* vrified  */
+.Page_Conten_t .Rceipts_History label 
+{
+    display: flex;
+    gap: 0 8px;
+}
+
+.Page_Conten_t .Rceipts_History input 
+{
+    border: 1px solid #aaaaaa;
+}
+
+.Page_Conten_t .Rceipts_History input:focus 
+{
+    outline: 0;
+    border: 1px solid #111111;
+}
+
+.Page_Conten_t .Rceipts_History button 
+{
+    font-weight: 600;
+    border: 0;
+    background-color: #111111;
+    color: #FFFFFF;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.Page_Conten_t .Rceipts_History button:hover 
+{
+    background-color: #8b302e;
+}
+
+.Page_Conten_t .Rceipts_History ul 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 24px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Page_Conten_t .Rceipts_History .content-box 
+{
+    display: grid;
+    align-items: center;
+    margin: 48px 0;
+}
+
+.Page_Conten_t .Rceipts_History .content-box form {
+    display: grid;
+    gap: 24px 0;
+}
+
+.Page_Conten_t .Rceipts_History .content-box.two 
+{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px 48px;
+}
+
+.Page_Conten_t .Rceipts_History .content-box.table 
+{
+    overflow-x: auto;
+    max-height: 640px;
+    border-radius: 8px;
+}
+
+.Page_Conten_t .Rceipts_History .content-box.table table
+{
+    border: 1px solid #45a7a7;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.Page_Conten_t .Rceipts_History .content-box.table thead tr,
+
+.Page_Conten_t .Rceipts_History .content-box.table tbody tr 
+{
+    text-align: left;
+    color: #111111;
+    border: 1px solid #aaaaaa;
+}
+
+.Page_Conten_t .Rceipts_History .content-box.table th 
+{
+    font-weight: 600;
+}
+
+.Page_Conten_t .Rceipts_History .content-box.table td 
+{
+    font-weight: 400;
+}
+
+.Page_Conten_t .Rceipts_History .content-box.table th,
+.Page_Conten_t .Rceipts_History .content-box.table td 
+{
+    padding: 16px 24px;
+    font-size: 16px;
+}
+
+.Page_Conten_t .Rceipts_History .content-box .box-pack 
+{
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+}
+
+.Page_Conten_t .Rceipts_History .content-box .box-pack img.product 
+{
+    height: 320px;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.Page_Conten_t .Rceipts_History .content-box .box-pack img.section 
+{
+    border-radius: 8px;
+    height: 400px;
+}
+
+.Page_Conten_t .Rceipts_History .content-box .box-pack p 
+{
+    font-size: 16px;
+}
+
+.Page_Conten_t .Rceipts_History .content-box .box-pack .pack-content 
+{
+    padding: 0 24px 24px 24px;
+}
+
+@media screen and (max-width: 1024px) 
+{
+    .Page_Conten_t .Rceipts_History 
+
+    {
+        padding: 48px 48px;
+    }
+}
+
+@media screen and (max-width: 768px) 
+{
+    .Page_Conten_t .Rceipts_History 
+
+    {
+        padding: 48px 24px;
+    }
+
+    .Page_Conten_t .Rceipts_History .content-box.two 
+    
+    {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 48px 24px;
+    }
+}
+
+@media screen and (max-width: 540px) 
+
+{
+    .Page_Conten_t .Rceipts_History
+    {
+        padding: 48px 16px;
+    }
+}

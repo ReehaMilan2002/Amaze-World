@@ -1,0 +1,158 @@
+/* Your provided CSS styles */
+body, html {
+    background-color:#F4F4F4;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding:0%; /* Adjust top and bottom padding */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+    z-index: 1;
+}
+.search-field {
+    padding: 8px;
+    margin-right: 10px; /* Remove or adjust the margin-right */
+    margin-left: 10px; /* Add margin-left */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width:40%;
+    height: 36px; 
+  }
+
+.row1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#b2af9b;
+    color:white;
+    padding: 20px;
+    font-size: 18px;
+    width: 100%;
+    z-index: 999;
+    box-sizing: border-box; /* Ensure padding doesn't expand the element's size */
+}
+
+.row2 {
+    display: flex;
+    font-size: 18px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+    height:0.5%;
+    background-color:#F4F4F4;
+    box-sizing: border-box; /* Ensure padding doesn't expand the element's size */
+    z-index: 999;
+    margin-top:px; 
+ 
+    
+}
+
+/* Adjust other styles based on your layout and design */
+
+/* For example: */
+/* Logo */
+.logo {
+    width: 100px;
+    height:90px;
+    padding-left:70%;
+}
+
+/* Shopping Cart & Search */
+.row1 a {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px;
+    margin-left: 20px;
+}
+.searchContainer {
+    padding: 8px;
+    font-size: 16px;
+    width: 800px; /* Adjusted width for better responsiveness */
+    outline: none;
+    border: none;
+    background-color: #f0f0f0; 
+}
+
+.searchContainer input[type="text"] {
+    border: none;
+    background-color: transparent; /* Make input background transparent */
+    width: calc(100% - 16px); /* Adjusted width to account for padding */
+    margin-right: 8px; /* Add some space between input and error message */
+}
+
+.searchContainer .error {
+    color: red; /* Color for error message */
+    margin-top: 8px; /* Add some space above error message */
+}
+
+.searchContainer li {
+    list-style-type: none; /* Remove bullets from list */
+    padding: 8px 0; /* Add padding around list items */
+    border-bottom: 1px solid #ccc; /* Add bottom border to separate items */
+}
+
+.searchContainer li:last-child {
+    border-bottom: none; /* Remove bottom border from last item */
+}
+
+
+/* Login */
+.login {
+    text-decoration: none;
+    color: #000000;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.login-container {
+    display: flex;
+    align-items: center;
+}
+
+.login-icon {
+    width: 30px;
+    height: auto;
+    margin-left: 5px;
+}
+
+.shopping-cart-icon,
+.wishlist {
+    width: 30px;
+    height: auto;
+    margin-left: 10px; /* Keeping consistent spacing */
+}
+
+/* Navigation Links */
+ nav a {
+    text-decoration: none;
+    color: #000000;
+    padding: 60px; /* Adjusted padding for better spacing */
+}
+
+
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .row1 {
+        padding: 10px; /* Adjust padding for smaller screens */
+        top: 50px; /* Adjust top position for smaller screens */
+    }
+
+    .row2 {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    /* Adjust other styles as needed for smaller screens */
+    /* For example, reducing logo size, adjusting input width, etc. */
+}

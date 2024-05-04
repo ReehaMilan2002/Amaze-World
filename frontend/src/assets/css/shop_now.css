@@ -1,0 +1,38 @@
+/* Products.css */
+.products-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    
+  }
+  
+  .products-container p {
+    text-align: left;
+    font-size: 1.5rem;
+    color: #333;
+    margin-top:30%; /* Add margin to move the paragraph down */
+    padding-left: 20px;
+    margin-left: 0;
+ 
+  }
+  .products-container img{
+    max-width: 100%; /* Ensure images don't exceed their parent container */
+  height:300px; /* Maintain the aspect ratio of the image */
+  width: 300px;
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  
+  /* Media Query for Responsive Design */
+  @media (max-width: 768px) {
+    .products-container {
+      padding: 10px;
+    }
+  
+    .products-container p {
+      font-size: 1.2rem;
+      margin-top: 10px; /* Adjust margin for smaller screens */
+    }
+  }
+  

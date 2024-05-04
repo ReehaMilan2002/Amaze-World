@@ -1,0 +1,92 @@
+/* stories.css */
+
+/* Apply Helvetica font to all text */
+.Stories-body {
+  font-family: "Helvetica", sans-serif;
+  line-height: 1.6;
+  /* background-image: url('../images/artisans/artisansbackground.jpeg'); */
+  background-size: cover; /* or contain */
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.7); /* 50% translucent background */
+  background-attachment: fixed; /* Make background fixed with scroll */
+}
+
+/* Style for artisan name */
+.artisan-name {
+  display: block;
+  padding: 5%;
+  border-radius: 20px;
+  /* background-color: rgb(241, 221, 221); */
+  font-weight: bold; /* Make font bold */
+  font-size: 200%;
+}
+
+/* Style for card content */
+.card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  font-size: 130%;
+  background-color: rgba(0, 0, 0, 0.7); /* 70% translucent background */
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  overflow: auto; /* Allow scrolling for overflowing content */
+  word-wrap: break-word; /* Allow words to break */
+  white-space: pre-line; /* Preserve line breaks */
+  display: flex; /* Use flexbox */
+  align-items: center; /* Vertically center content */
+}
+
+/* Fade in card content on hover */
+.card:hover .card-content {
+  opacity: 1;
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Style for individual card */
+.card {
+  position: relative;
+  top: 50%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Adjust box shadow for floating effect */
+  width: 30%; /* Adjust width for horizontal stacking */
+  overflow: hidden;
+  display: inline-block; /* Change to inline-block for horizontal stacking */
+  margin: 10px; /* Add margin between cards */
+  background-color: transparent; /* Make background transparent */
+  text-align: center;
+  border-radius: 20px;
+}
+
+/* Style for card image */
+.card img {
+  width: 150%;
+  height: 150%;
+  object-fit: cover; /* Scale image to cover entire container */
+  transition: transform 0.3s ease;
+  opacity: 1;
+  /* border-radius: 20px; Add border radius to make corners smoother */
+}
+.card:hover img {
+  transform: scale(1.1); /* Increase scale on hover */
+  opacity: 0.8;
+}
+
+/* Style for card title */
+.card h2 { 
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-decoration: none; /* Remove underline from text */
+  font-weight: bold; /* Make font bold */;
+}
+
+/* Style for card description */
+.card p {
+  margin: 0;
+  text-decoration: none; /* Remove underline from text */
+  font-weight: bold; /* Make font bold */
+  word-wrap: break-word; /* Allow wrapping of long words */
+}

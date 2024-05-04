@@ -1,0 +1,37 @@
+/* Modified TermsAndConditions.css */
+
+.terms-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10% 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.main-heading {
+  color: #333;
+  text-align: center;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.terms-heading {
+  color: #0066cc;
+}
+
+.terms-paragraph {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.footer {
+  margin-top: 50px;
+  text-align: center;
+  color: #999;
+}
+
+.footer p {
+  margin: 5px 0;
+}

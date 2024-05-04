@@ -1,0 +1,68 @@
+/* Modal.css */
+.overlayModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black background */
+  z-index: 1000; /* ensure it appears above other content */
+}
+
+.modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1001; /* ensure it appears above the overlay */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* add shadow for depth */
+  background: black;
+}
+
+/* Target the scrollbar track */
+.modal-content::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+/* Target the scrollbar thumb */
+.modal-content::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px; /* Add rounded corners */
+}
+
+.modal-content_TheContent {
+  text-align: center;
+  max-height: 30vh; /* Adjust height as needed (vh = viewport height) */
+  overflow: auto;
+}
+
+.modal .modal-heading {
+  color: azure;
+  font-family: cursive;
+  font-size: 35px;
+}
+
+.modal .modal-paragraph {
+  color: azure;
+  font-family: initial;
+  font-size: 20px;
+}
+
+.modal .modal-button {
+  font-size: 20px;
+  padding: 8px 32px;
+  background-color: maroon;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-family: ui-rounded;
+}
+
+button:hover {
+  background-color: #0056b3; /* darker shade of blue on hover */
+}

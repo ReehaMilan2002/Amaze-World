@@ -1,0 +1,182 @@
+/* body{
+  max-width:100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+
+} */
+.vide-container {
+  padding-top:13%;
+  max-width: 94%; /* Set a maximum width for the container */
+  height: 90vh;
+  margin: 0 auto; /* Center the container horizontally */
+  position: relative; /* Position relative for absolute positioning */
+}
+
+.vide-container video {
+  width: 100%; /* Ensure the video takes up 100% of the container width */
+  height: 2%; /* Maintain aspect ratio */
+  display: block; /* Make sure video takes up full width */
+  opacity: 0.8; /* Decrease transparency */
+  animation: fadeIn 2s ease-in-out forwards; 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.9;
+  }
+}
+
+.quote-container{
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+}
+
+.quote {
+  background-color: rgba(7, 6, 6, 0.731);
+  color: #f6f6f6;
+  font-size:60px;
+  cursor: default; /* Prevent the text from appearing as a link */
+  text-decoration: none; /* Remove underline */
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.bestseller-section {
+  text-align: center; 
+  padding-top:20%;  
+  padding-bottom: 100px; 
+}
+
+.bestsellers-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 50px; 
+}
+
+.bestseller-item {
+  max-width:600px; /* Adjust the maximum width of each item */
+  border-radius: 8px; 
+}
+
+.carpets {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd; /* Add a border for visual separation */
+  border-radius: 8px; /* Optional: Add border-radius for rounded corners */
+}
+
+.shop-carpets {
+  display: inline-block; /* Change from block to inline-block */
+  padding: 20px 60px;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  background-color:#F4F4F4;
+  border: 1px solid #d79d55;
+  color: #d79d55;
+  font-size: large;
+  transition: background-color 0.3s ease;
+  margin: 20px auto;
+}
+
+.shop-carpets:hover {
+  background-color: #e99c3d;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Style for the artisan section */
+.our-story-section {
+
+  display: flex;
+  padding-bottom: 5%;
+}
+
+.image-column {
+  flex: 1.5; /* Adjust the flex value for width */
+  overflow: hidden;
+}
+
+.artisans {
+  width:100%;
+  height: auto;
+}
+
+.text-column {
+  flex: 1; /* Adjust the flex value for width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.Story-page-link {
+  font-size: larger;
+  color: #000000;
+  text-decoration: none;
+  font-weight: bolder;
+  transition: color 0.3s, text-decoration 0.3s, font-weight 0.3s;
+}
+
+.Story-page-link:hover {
+  color: #000000; /* New color when hovered */
+  text-decoration: underline; /* Add underline when hovered */
+  font-weight: bold; /* Change font weight when hovered */
+}
+
+
+
+.text-colomn h2{
+  color: #000000;
+}
+
+.story, .bestseller-item p {
+  color: #000000;
+  cursor: pointer;
+  text-decoration:underline;
+}
+
+.story:hover {
+  color: #e99c3d;
+}
+
+.image-container {
+  display: flex;
+}
+
+.image-container img {
+  padding-top:150px; 
+  width:33.5%; 
+  height:auto; 
+}
+
+/* .picture-section{
+  display: flex;
+  width: 100%;
+  background-color: #F6EEE0;
+  padding-bottom: 5%;
+} */
+
+.text-strip div {
+  flex: 1;
+  text-align: center;
+  line-height: 2; 
+  padding: 10px; 
+  font-size: 24px;
+}
+
+.text-strip {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px; 
+  margin-bottom: 80px; 
+}
+
+

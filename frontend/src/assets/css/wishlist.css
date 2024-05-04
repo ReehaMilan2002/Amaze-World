@@ -1,0 +1,80 @@
+
+.wishlistTitle{
+  padding-top:20%;
+  text-align: center;
+  padding-bottom:70px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-item {
+  width: 30%; /* Adjust as needed */
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left:20px;
+}
+
+
+.product-image {
+  width:50%;
+  height:70%; /* Adjust as needed */
+
+  /* object-fit: cover; */
+}
+
+.product-details {
+  padding: 10px;
+}
+
+.product-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.product-price {
+  color: #060505;
+  text-decoration: none;
+}
+.wishlist-empty {
+  display: inline-block; /* Change from block to inline-block */
+  padding: 20px 60px;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #d79d55;
+  color: #d79d55;
+  font-size: large;
+  transition: background-color 0.3s ease;
+  margin: 20px auto;
+}
+
+
+.wishlist-empty:hover {
+  background-color: #e99c3d;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.wishlist-icon.clicked img {
+  animation: heartPopUp 0.5s ease forwards;
+}
+
+@keyframes heartPopUp {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+

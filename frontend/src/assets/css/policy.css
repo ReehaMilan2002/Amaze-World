@@ -1,0 +1,39 @@
+.policy-page .store-policy-container {
+    width: 100%;
+    min-height: 100vh; 
+    padding: 15% 20px;
+    font-size: 22px; 
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+    opacity: 0.9;
+}
+
+.policy-page .policy-section {
+    margin-bottom: 60px; 
+}
+
+.policy-page .policy-section h2 {
+    font-size: 30px; 
+    margin-bottom: 20px; 
+    text-decoration: underline;
+    font-family: 'CoolFont', sans-serif;
+    cursor: default;
+    color: #3c0238;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.policy-page .policy-section p {
+    font-size: 20px; 
+    line-height: 1.8; 
+    text-decoration: none;
+    font-family: 'RegularFont', sans-serif;
+    color: #000000;
+    font-style: italic;
+    font-weight: bold;
+    max-width: 800px; 
+    margin: 0 auto;
+    text-align: center;
+}
